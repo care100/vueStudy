@@ -18,7 +18,9 @@ import 'es6-promise/auto'
 
 // ui library
 // import './element-ui'
+
 import care from 'vue-care'
+
 Vue.use(care)
 
 // ajax

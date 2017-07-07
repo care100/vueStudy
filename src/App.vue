@@ -9,6 +9,10 @@
   // import NProgress from 'src/components/NProgress'
   // import { mapGetters } from 'vuex'
   // Vue.component('n-progress', NProgress)
+  
+  export default {
+    
+  }
 </script>
 <style lang="stylus" rel="stylesheet/stylus">
   ::-webkit-scrollbar
