@@ -1,7 +1,10 @@
 <template>
   <div id="app">
       <!-- <router-view></router-view> -->
-      <progress-bar :progress="60.32"></progress-bar>
+      <progress-bar :progress="percent" :width="200" :stroke-width="strokeWidth"></progress-bar>
+      percent:<input type="range" name="percent" min="0" max="100" v-model="percent">
+      <br>
+      stroke width:<input type="range" name="strokeWidth" min="0" max="150" v-model="strokeWidth">
   </div>
 </template>
 <script>
@@ -11,7 +14,12 @@
   // Vue.component('n-progress', NProgress)
   
   export default {
-    
+    data () {
+      return {
+        percent: 55,
+        strokeWidth: 10
+      }
+    }
   }
 </script>
 <style lang="stylus" rel="stylesheet/stylus">
