@@ -2,9 +2,10 @@
   <div id="app">
       <!-- <router-view></router-view> -->
       <progress-bar :progress="percent" :width="200" :stroke-width="strokeWidth"></progress-bar>
-      percent:<input type="range" name="percent" min="0" max="100" v-model="percent">
       <br>
-      stroke width:<input type="range" name="strokeWidth" min="0" max="150" v-model="strokeWidth">
+      percent:<input type="range" name="percent" min="0" max="100" v-model.number="percent">
+      <br>
+      stroke width:<input type="range" name="strokeWidth" min="0" max="150" v-model.number="strokeWidth">
   </div>
 </template>
 <script>
@@ -16,8 +17,8 @@
   export default {
     data () {
       return {
-        percent: 55,
-        strokeWidth: 10
+        percent: 55.55,
+        strokeWidth: 20
       }
     }
   }
